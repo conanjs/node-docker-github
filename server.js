@@ -26,7 +26,6 @@ async function main() {
         server.use("/", mocks.server(server.Router()));
 
         const result = await server.start();
-
         console.info(result);
     } catch (error) {
         console.error(error);
